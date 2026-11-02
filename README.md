@@ -25,6 +25,7 @@ This is a modern PowerShell equivalent of the official Microsoft VBScript publis
 |------|-------------|
 | `IISLogCleanup.ps1` | Main cleanup script (run by the scheduled task) |
 | `Setup-IISLogCleanup.ps1` | Interactive setup script (run once as Administrator) |
+| `EVENT-LOG.md` | Event Log source, Event IDs, and troubleshooting reference |
 
 ## Quick Start
 
@@ -71,6 +72,8 @@ Unregister-ScheduledTask -TaskName "IIS Log Cleanup" -Confirm:$false
 
 - **File log**: `C:\Scripts\IISLogCleanup\IISLogCleanup.log`
 - **Event Log**: Application log, source `IISLogCleanup` (Event ID 1000 = success, 1001/1002 = errors/warnings)
+
+See [EVENT-LOG.md](EVENT-LOG.md) for full Event Log reference, Event IDs, and troubleshooting.
 
 ## Notes
 
